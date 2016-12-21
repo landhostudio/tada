@@ -1,6 +1,24 @@
-# Rossi e Associati
+# Tada
 
-Official Theme for Rossi e Associati – Studio Legale
+Official Theme for Tada – The Key
+
+## To-do’s
+
+### Stage 1
+
+1. [ ] Design of Fiorenza
+
+### Stage 2
+
+1. [ ] Product + Key with petals (parallax)
+2. [ ] Newsletter + MailChimp
+3. [ ] Product features
+4. [ ] Product video
+
+### Stage 3
+
+1. [ ] Reordered sections (ACF)
+2. [ ] Add sections with differect layouts
 
 ## License
 
