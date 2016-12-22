@@ -1,8 +1,8 @@
 <?php
 
-  if (!function_exists('rossi_associati_setup')) {
+  if (!function_exists('tada_setup')) {
 
-    function rossi_associati_setup() {
+    function tada_setup() {
       
       // Let WordPress manage the document title -------------------------------
 			
@@ -136,4 +136,4 @@
     }
 
   }
-  add_action('after_setup_theme', 'rossi_associati_setup');
+  add_action('after_setup_theme', 'tada_setup');
