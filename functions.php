@@ -129,6 +129,10 @@
       }
       add_filter('upload_mimes', 'svg_upload');
       
+      // Content width ---------------------------------------------------------
+      
+      if (!isset($content_width)) $content_width = 640;
+
     }
 
   }
