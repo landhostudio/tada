@@ -120,6 +120,15 @@
       }
       add_action('init', 'disable_comments_admin_bar');
       
+      // SVG upload ------------------------------------------------------------
+
+      function svg_upload($mimes = array()) {
+        $mimes['svg'] = 'image/svg+xml';
+        $mimes['svgz'] = 'image/svg+xml';
+        return $mimes;
+      }
+      add_filter('upload_mimes', 'svg_upload');
+      
     }
 
   }
