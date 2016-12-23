@@ -15,6 +15,7 @@ get_header(); ?>
     <?php elseif (get_row_layout() == 'landing_sections_carousel'): ?>
       <?php get_template_part('template-parts/content', 'carousel'); ?>
     <?php elseif (get_row_layout() == 'landing_sections_form'): ?>
+      <?php get_template_part('template-parts/content', 'form'); ?>
     <?php endif; ?>
     
   <?php endwhile; ?>
