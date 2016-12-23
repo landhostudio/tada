@@ -2,9 +2,9 @@
 
   <section class="hero">
 
-  	<?php if (get_field('home_hero_title')): ?>
+  	<?php if (get_field('landing_hero_title')): ?>
       <div class="hero__title">
-        <h2><?php the_field('home_hero_title'); ?></h2>
+        <h2><?php the_field('landing_hero_title'); ?></h2>
       </div>
   	<?php endif; ?>
 
