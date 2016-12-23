@@ -57,6 +57,7 @@ get_header(); ?>
     <?php if (get_row_layout() == 'home_sections_quote'): ?>
       <?php get_template_part('template-parts/content', 'quote'); ?>
     <?php elseif (get_row_layout() == 'home_sections_carousel'): ?>
+      <?php get_template_part('template-parts/content', 'carousel'); ?>
     <?php elseif (get_row_layout() == 'home_sections_form'): ?>
     <?php endif; ?>
     
