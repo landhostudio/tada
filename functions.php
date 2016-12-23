@@ -8,27 +8,27 @@
 			
       add_theme_support('title-tag');
 
-			// Enable support for Post Thumbnails on posts and pages -----------------
+      // Enable support for Post Thumbnails on posts and pages -----------------
 			
       add_theme_support('post-thumbnails');
 
-			// Enables dynamic navigation --------------------------------------------
+      // Enables dynamic navigation --------------------------------------------
 
-      register_nav_menus( array(
-				'menu' => 'Menu'
-			));
+      register_nav_menus(array(
+        'menu' => 'Menu'
+      ));
 
       // Load the assets -------------------------------------------------------
 			
-			function init_assets() {
+      function init_assets() {
 
         wp_enqueue_style('all-css', get_template_directory_uri() . '/dist/css/all.css', true, true);
 
         wp_register_script('all-js', get_template_directory_uri() . '/dist/js/all.js', array(), '', true);
         wp_enqueue_script('all-js');
 
-			}
-			add_action('wp_enqueue_scripts', 'init_assets');
+      }
+      add_action('wp_enqueue_scripts', 'init_assets');
       
       // Soil ------------------------------------------------------------------
       
