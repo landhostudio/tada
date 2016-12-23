@@ -26,15 +26,13 @@
     </div>
   <?php endif; ?>
 
-  <?php if (get_sub_field('landing_sections_form_title') && get_sub_field('landing_sections_form_body')): ?>
+  <?php if (get_sub_field('landing_sections_form_title') && get_sub_field('landing_sections_form_body') && get_field('options_form_mailchimp', option)): ?>
     <div class="form__input">
 
       <div class="form__input-text">
-        <?php the_sub_field('landing_sections_form_title'); ?>
+        <h3><?php the_sub_field('landing_sections_form_title'); ?></h3>
         <?php the_sub_field('landing_sections_form_body'); ?>
       </div>
-
-      <!-- form + button (from globals) -->
 
       <?php if (get_field('options_form_mailchimp', option)): ?>
 
