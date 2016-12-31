@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'Brown';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Brown Light'), local('Brown-Light'),
+       url('../webfonts/brown-light.woff2') format('woff2'),
+       url('../webfonts/brown-light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Brown';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Brown'), local('Brown-Regular'),
+       url('../webfonts/brown-regular.woff2') format('woff2'),
+       url('../webfonts/brown-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Brown';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Brown Bold'), local('Brown-Bold'),
+       url('../webfonts/brown-bold.woff2') format('woff2'),
+       url('../webfonts/brown-bold.woff') format('woff');
+}
