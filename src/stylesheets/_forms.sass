@@ -14,7 +14,6 @@ button, input
   color: currentColor
   border: em-calc(1) solid
   border-radius: 0
-  box-shadow: em-calc(4) em-calc(4) 0px 0px currentColor
   vertical-align: middle
   cursor: pointer
   user-select: none
@@ -22,6 +21,9 @@ button, input
 
   &:focus
     outline: 0
+
+  &--fancy
+    box-shadow: em-calc(4) em-calc(4) 0px 0px currentColor
 
   &--toggle
     border-color: transparent
