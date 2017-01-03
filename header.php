@@ -8,7 +8,7 @@
   </head>
   <body>
     
-    <header class="header" role="banner">
+    <header class="header<?php if (has_nav_menu('menu')): ?> header--hasmenu<?php endif; ?>" role="banner">
       <div class="header__container">
 
         <h1 class="header__title">
@@ -36,16 +36,16 @@
           </div>
         <?php endif; ?>
         
-        <div class="header__menu">
-          <button type="button" class="button button--toggle">
-            <span class="hidden"><?php esc_html_e('Menu', 'tada'); ?></span>
-            <span class="button--toggle-bar"></span>
-            <span class="button--toggle-bar"></span>
-            <span class="button--toggle-bar"></span>
-          </button>
-        </div>
-
         <?php if (has_nav_menu('menu')): ?>
+          <div class="header__menu">
+            <button type="button" class="button button--toggle">
+              <span class="hidden"><?php esc_html_e('Menu', 'tada'); ?></span>
+              <span class="button--toggle-bar"></span>
+              <span class="button--toggle-bar"></span>
+              <span class="button--toggle-bar"></span>
+            </button>
+          </div>
+
           <nav class="header__navigation" role="navigation">
             <h2 class="hidden"><?php esc_html_e('Navigation', 'horoman'); ?></h2>
             <?php wp_nav_menu(array('theme_location' => 'menu')); ?>
