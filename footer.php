@@ -1,3 +1,5 @@
+    </main>
+
     <footer role="contentinfo" class="footer">
 
       <?php if (get_field('options_footer_icon', option)): ?>
