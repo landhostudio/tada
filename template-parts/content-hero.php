@@ -1,48 +1,48 @@
 <?php if (is_home() || is_front_page()): ?>
-
   <section class="hero">
-
-  	<?php if (get_field('landing_hero_title')): ?>
-      <div class="hero__title">
-        <h2><?php the_field('landing_hero_title'); ?></h2>
+    <?php if (get_field('landing_hero_title')): ?>
+      <div class="hero__container">
+        <div class="hero__title">
+          <h2><?php the_field('landing_hero_title'); ?></h2>
+        </div>
       </div>
-  	<?php endif; ?>
+    <?php endif; ?>
 
-    <div class="hero__scroll">
-      <button><?php esc_html_e('Learn More', 'tada'); ?></button>
+    <div class="hero__readmore">
+      <button type="button" class="button button--more">
+        <span><?php esc_html_e('Learn More', 'tada'); ?></span>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 18" width="8" height="18">
+          <g>
+            <path d="M4,17.18l-.39.35L4,18l.39-.46ZM3.48,0V17.18h1V0Zm.9,16.83L.78,12.53,0,13.24l3.61,4.3Zm0,.71L8,13.24l-.78-.71-3.61,4.3Z"></path>
+          </g>
+        </svg>
+      </button>
     </div>
 
-    <div class="hero__parallax">
-      
-      <div class="hero__parallax-1">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/parallax-1@1x.jpg" srcset="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/parallax-1@1x.jpg 1x, <?php echo get_stylesheet_directory_uri(); ?>/dist/img/parallax-1@2x.jpg 2x" alt="">
-      </div>
-      
-      <div class="hero__parallax-2">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/parallax-2@1x.jpg" srcset="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/parallax-2@1x.jpg 1x, <?php echo get_stylesheet_directory_uri(); ?>/dist/img/parallax-2@2x.jpg 2x" alt="">
-      </div>
-      
-      <div class="hero__parallax-3">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/parallax-3@1x.jpg" srcset="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/parallax-3@1x.jpg 1x, <?php echo get_stylesheet_directory_uri(); ?>/dist/img/parallax-3@2x.jpg 2x" alt="">
-      </div>
-      
-      <div class="hero__parallax-4">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/parallax-4@1x.jpg" srcset="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/parallax-4@1x.jpg 1x, <?php echo get_stylesheet_directory_uri(); ?>/dist/img/parallax-4@2x.jpg 2x" alt="">
+    <div class="hero__scene">
+      <div class="hero__petals">
+        <div class="hero__petal hero__petal--1">
+          <img class="rellax" src="<?php echo get_template_directory_uri(); ?>/dist/img/petals-1.png" srcset="<?php echo get_template_directory_uri(); ?>/dist/img/petals-1.png 1x, <?php echo get_template_directory_uri(); ?>/dist/img/petals-1@1,5x.png 1.5x, <?php echo get_template_directory_uri(); ?>/dist/img/petals-1@2x.png 2x" alt="" data-rellax-speed="1" data-rellax-percentage="0.25">
+        </div>
+
+        <div class="hero__petal hero__petal--2">
+          <img class="rellax" src="<?php echo get_template_directory_uri(); ?>/dist/img/petals-2.png" srcset="<?php echo get_template_directory_uri(); ?>/dist/img/petals-2.png 1x, <?php echo get_template_directory_uri(); ?>/dist/img/petals-2@1,5x.png 1.5x, <?php echo get_template_directory_uri(); ?>/dist/img/petals-2@2x.png 2x" alt="" data-rellax-speed="4">
+        </div>
+
+        <div class="hero__petal hero__petal--3">
+          <img class="rellax" src="<?php echo get_template_directory_uri(); ?>/dist/img/petals-3.png" srcset="<?php echo get_template_directory_uri(); ?>/dist/img/petals-3.png 1x, <?php echo get_template_directory_uri(); ?>/dist/img/petals-3@1,5x.png 1.5x, <?php echo get_template_directory_uri(); ?>/dist/img/petals-3@2x.png 2x" alt="" data-rellax-speed="2">
+        </div>
       </div>
 
+      <div class="hero__product">
+        <div class="hero__key">
+          <img class="rellax" src="<?php echo get_template_directory_uri(); ?>/dist/img/key.png" srcset="<?php echo get_template_directory_uri(); ?>/dist/img/key.png 1x, <?php echo get_template_directory_uri(); ?>/dist/img/key@1,5x.png 1.5x, <?php echo get_template_directory_uri(); ?>/dist/img/key@2x.png 2x" alt="" data-rellax-speed="1.5">
+        </div>
+
+        <div class="hero__shadow">
+          <img class="rellax" src="<?php echo get_template_directory_uri(); ?>/dist/img/shadow.png" srcset="<?php echo get_template_directory_uri(); ?>/dist/img/shadow.png 1x, <?php echo get_template_directory_uri(); ?>/dist/img/shadow@1,5x.png 1.5x, <?php echo get_template_directory_uri(); ?>/dist/img/shadow@2x.png 2x" alt="" data-rellax-speed="1">
+        </div>
+      </div>
     </div>
-
-    <div class="hero__product">
-
-      <div class="hero__product-key">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/key.jpg" alt="">
-      </div>
-      
-      <div class="hero__product-shadow">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/key-shadow.jpg" alt="">
-      </div>
-
-    </div>
-
   </section>
 <?php endif; ?>

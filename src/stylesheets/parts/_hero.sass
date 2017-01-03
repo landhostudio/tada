@@ -1,0 +1,78 @@
+.hero
+  position: relative
+  padding-bottom: 100vh
+  overflow: hidden
+  background-color: $color-4
+  color: $color-3
+
+  &__container
+    @extend .container
+
+  &__title
+    position: absolute
+    z-index: 5
+
+    @include media(max-width $screen-sm-max)
+      bottom: em-calc(70)
+
+    @include media($screen-sm-min)
+      top: 50%
+      transform: translateY(-50%)
+
+  &__readmore
+    display: block
+    position: absolute
+    left: 0
+    bottom: em-calc(8)
+    width: 100%
+    text-align: center
+    z-index: 8
+
+  &__scene
+    @extend .absolute
+
+    @include media(max-width $screen-sm-max)
+      transform: scale(2)
+
+    img
+      width: 100%
+
+  // PETALS
+  &__petals
+    @extend .absolute
+    display: flex
+    align-items: center
+
+  &__petal
+    @extend .absolute
+
+    top: 50%
+    height: auto
+    transform: translateY(-50%)
+
+    &--1
+      z-index: 1
+    &--2
+      z-index: 2
+    &--3
+      z-index: 3
+    &--4
+      z-index: 4
+
+  // KEY
+  &__product
+    @extend .absolute
+
+  &__key,
+  &__shadow
+    @extend .absolute
+
+    top: 50%
+    height: auto
+    transform: translateY(-50%)
+
+  &__key
+    z-index: 2
+
+  &__shadow
+    z-index: 1

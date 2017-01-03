@@ -1,4 +1,5 @@
 //=include ../../bower_components/jquery/dist/jquery.js
+//=include rellax.js
 //=include ../../bower_components/ajaxchimp/jquery.ajaxchimp.js
 //=include ../../bower_components/fastclick/lib/fastclick.js
 //=include ../../bower_components/viewport-units-buggyfill/viewport-units-buggyfill.js
@@ -10,6 +11,8 @@ $(function() {
   var init = function() {
     initHeader();
     initHeaderCTA();
+    initHeroCTA();
+    initHeroParallax();
     initNewsletter();
   };
 
@@ -28,6 +31,20 @@ $(function() {
 
       $('#email').focus();
     });
+  };
+
+  function initHeroCTA() {
+    $('.hero__readmore button').click(function(event) {
+
+      $('html, body').animate({
+        scrollTop: $('.carousel').offset().top
+      }, 2000 );
+
+    });
+  };
+
+  function initHeroParallax() {
+    var rellax = new Rellax('.rellax');
   };
 
   function initNewsletter() {
