@@ -1,0 +1,78 @@
+@import "flickity"
+
+.carousel
+  &__slides
+    background-color: $color-2
+
+  &__slide
+    color: $color-1
+    padding-top: em-calc(48)
+    padding-bottom: em-calc(96)
+    width: 100%
+    min-height: 75vh
+
+    @include media($screen-sm-min)
+      padding-top: em-calc(96)
+
+  &__container
+    @extend .container
+    
+    display: flex
+
+    @include media(max-width $screen-sm-max)
+      flex-direction: column
+
+    @include media($screen-sm-min)
+      flex-wrap: wrap
+
+  &__image
+    @include media(max-width $screen-sm-max)
+      margin-bottom: em-calc(48)
+      text-align: center
+
+    @include media($screen-sm-min)
+      text-align: right
+      width: 50%
+      padding-left: 6.25%
+      order: 2
+
+    img
+      width: 100%
+      max-width: em-calc(240)
+
+      @include media($screen-sm-min)
+        max-width: em-calc(300)
+
+  &__content
+    @include media($screen-sm-min)
+      width: 50%
+      padding-right: 6.25%
+      order: 1
+
+    h2, h3
+      margin-top: 0
+
+  &__feature
+    display: flex
+    flex-wrap: wrap
+
+    + .carousel__feature
+      margin-top: em-calc(32)
+
+  &__icon
+    width: auto
+
+    @include media($screen-sm-min)
+      width: 25%
+
+    img
+      width: em-calc(64)
+
+  &__text
+    width: 75%
+
+    @include media(max-width $screen-sm-max)
+      padding-left: em-calc(16)
+
+    *
+      margin-top: 0

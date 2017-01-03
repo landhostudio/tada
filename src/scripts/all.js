@@ -1,5 +1,6 @@
 //=include ../../bower_components/jquery/dist/jquery.js
 //=include rellax.js
+//=include ../../bower_components/flickity/dist/flickity.pkgd.js
 //=include ../../bower_components/ajaxchimp/jquery.ajaxchimp.js
 //=include ../../bower_components/fastclick/lib/fastclick.js
 //=include ../../bower_components/viewport-units-buggyfill/viewport-units-buggyfill.js
@@ -13,6 +14,7 @@ $(function() {
     initHeaderCTA();
     initHeroCTA();
     initHeroParallax();
+    initCarousel();
     initNewsletter();
   };
 
@@ -45,6 +47,18 @@ $(function() {
 
   function initHeroParallax() {
     var rellax = new Rellax('.rellax');
+  };
+
+  function initCarousel() {
+    var $carousel = $('.carousel__slides').flickity({
+      contain: false,
+      percentPosition: true,
+      prevNextButtons: false,
+      pageDots: true,
+      // resize: false, // false if carousel uses per.height
+      // setGallerySize: false, // false if carousel uses per.height
+      wrapAround: true // infinite loop
+    });
   };
 
   function initNewsletter() {
