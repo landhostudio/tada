@@ -1,0 +1,21 @@
+.quote
+  padding-top: em-calc(48)
+  padding-bottom: em-calc(48)
+  background-color: $color-3
+  background-repeat: no-repeat
+  background-position: 50%
+  background-size: cover
+  color: $color-1
+  text-align: center
+
+  @include media($screen-sm-min)
+    padding-top: em-calc(96)
+    padding-bottom: em-calc(96)
+
+  &__container
+    @extend .container
+
+  &__author
+    img
+      width: em-calc(80)
+      margin-top: em-calc(32)
