@@ -144,6 +144,8 @@
       	));
         
       }
+      
+      get_template_part('inc/acf');
 
     }
 
