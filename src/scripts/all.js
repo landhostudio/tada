@@ -15,7 +15,9 @@ $(function() {
     initHeroCTA();
     initHeroParallax();
     initCarousel();
+    initFormFocus();
     initNewsletter();
+    initFormQuotes();
   };
 
   function initHeader() {
@@ -61,20 +63,40 @@ $(function() {
     });
   };
 
+  function initFormFocus() {
+    $('#email').focus(function() {
+      $('.form').addClass('form--active');
+    });
+
+    $('#email').focusout(function() {
+      $('.form').removeClass('form--active');
+    });
+  };
+
   function initNewsletter() {
-    
-    $('.form__input form').ajaxChimp({
+
+    $('.form__signup form').ajaxChimp({
       callback: callbackFunction
     });
-    
+
     function callbackFunction(resp) {
-
       if (resp.result === 'success') {
-        $('.form__input-email').hide();
+        $('.form__email').hide();
       }
-
     }
-    
+
+  };
+
+  function initFormQuotes() {
+    var $quotes = $('.form__slides').flickity({
+      contain: false,
+      percentPosition: true,
+      prevNextButtons: false,
+      pageDots: true,
+      // resize: false, // false if carousel uses per.height
+      // setGallerySize: false, // false if carousel uses per.height
+      wrapAround: true // infinite loop
+    });
   };
 
   init();

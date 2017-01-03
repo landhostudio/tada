@@ -1,0 +1,29 @@
+.footer
+  position: relative
+  font-size: em-calc(18)
+  padding-top: em-calc(64)
+  padding-bottom: em-calc(24)
+  color: $color-3
+  background-color: $color-6
+  text-align: center
+
+  a
+    color: $color-3
+  
+  &__container
+    @extend .container
+    
+  &__icon
+    position: absolute
+    top: 0
+    right: 0
+    left: 0
+    z-index: 4
+    transform: translateY(-50%)
+    
+    img
+      width: em-calc(96)
+      height: em-calc(96)
+
+  &__copy
+    margin-top: em-calc(48)
