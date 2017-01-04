@@ -145,7 +145,7 @@
         
       }
       
-      // get_template_part('inc/acf');
+      get_template_part('inc/acf');
 
     }
 
