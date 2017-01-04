@@ -7,7 +7,7 @@
 <?php if (get_sub_field('landing_sections_quote_title')): ?>
   <section class="quote"<?php if (get_sub_field('landing_sections_quote_text_color') || get_sub_field('landing_sections_quote_background_color')): ?> style="<?php if (get_sub_field('landing_sections_quote_text_color')): ?> color: <?php the_sub_field('landing_sections_quote_text_color'); ?>;<?php endif; ?><?php if (get_sub_field('landing_sections_quote_background_color')): ?> background-color: <?php the_sub_field('landing_sections_quote_background_color'); ?>;<?php endif; ?>"<?php endif; ?>>
     <div class="quote__container">
-      <h2><?php the_sub_field('landing_sections_quote_title'); ?></h2>
+      <h2 class="font-normal"><?php the_sub_field('landing_sections_quote_title'); ?></h2>
     </div>
 
     <?php if (get_sub_field('landing_sections_quote_author') && $image): ?>
