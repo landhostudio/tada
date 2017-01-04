@@ -12,8 +12,8 @@ get_header(); ?>
     
     <?php if (get_row_layout() == 'landing_sections_quote'): ?>
       <?php get_template_part('template-parts/content', 'quote'); ?>
-    <?php elseif (get_row_layout() == 'landing_sections_carousel'): ?>
-      <?php get_template_part('template-parts/content', 'carousel'); ?>
+    <?php elseif (get_row_layout() == 'landing_sections_features'): ?>
+      <?php get_template_part('template-parts/content', 'features'); ?>
     <?php elseif (get_row_layout() == 'landing_sections_form'): ?>
       <?php get_template_part('template-parts/content', 'form'); ?>
     <?php endif; ?>
