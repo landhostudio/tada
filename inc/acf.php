@@ -118,7 +118,7 @@ acf_add_local_field_group(array (
 							),
 						),
 						array (
-							'return_format' => 'array',
+							'return_format' => 'id',
 							'preview_size' => 'thumbnail',
 							'library' => 'all',
 							'min_width' => '',
@@ -326,7 +326,7 @@ acf_add_local_field_group(array (
 							'max' => 0,
 							'layout' => 'block',
 							'button_label' => 'Add Slide',
-							'collapsed' => '',
+							'collapsed' => 'field_585d0277a8d0c',
 							'key' => 'field_585d025ba8d0b',
 							'label' => 'Slides',
 							'name' => 'landing_sections_carousel_slides',
