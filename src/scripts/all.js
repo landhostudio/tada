@@ -17,7 +17,6 @@ $(function() {
     initCarousel();
     initFormFocus();
     initNewsletter();
-    initFormQuotes();
   };
 
   function initHeader() {
@@ -85,18 +84,6 @@ $(function() {
       }
     }
 
-  };
-
-  function initFormQuotes() {
-    var $quotes = $('.form__slides').flickity({
-      contain: false,
-      percentPosition: true,
-      prevNextButtons: false,
-      pageDots: true,
-      // resize: false, // false if carousel uses per.height
-      // setGallerySize: false, // false if carousel uses per.height
-      wrapAround: true // infinite loop
-    });
   };
 
   init();

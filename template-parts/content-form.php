@@ -28,26 +28,20 @@
       <?php endif; ?>
     </div>
     
-    <?php if (have_rows('landing_sections_form_quotes')): ?>
-      <div class="form__quotes">
-        <div class="form__slides">
-          <?php while (have_rows('landing_sections_form_quotes')): the_row(); ?>
-            <div class="form__quote">
-              <?php if (get_sub_field('landing_sections_form_quote_title')): ?>
-                <div class="form__quote-title">
-                  <h3 class="h2"><?php the_sub_field('landing_sections_form_quote_title'); ?></h3>
-                </div>
-              <?php endif; ?>
+    <div class="form__quotes">
+      <div class="form__quote">
+        <?php if (get_sub_field('landing_sections_form_quote_title')): ?>
+          <div class="form__quote-title">
+            <h3 class="h2 font-normal"><?php the_sub_field('landing_sections_form_quote_title'); ?></h3>
+          </div>
+        <?php endif; ?>
 
-              <?php if (get_sub_field('landing_sections_form_quote_author')): ?>
-                <div class="form__quote-author">
-                  <p><?php the_sub_field('landing_sections_form_quote_author'); ?></p>
-                </div>
-              <?php endif; ?>
-            </div>
-          <?php endwhile; ?>
-        </div>
+        <?php if (get_sub_field('landing_sections_form_quote_author')): ?>
+          <div class="form__quote-author">
+            <p><?php the_sub_field('landing_sections_form_quote_author'); ?></p>
+          </div>
+        <?php endif; ?>
       </div>
-    <?php endif; ?>
+    </div>
   </div>
 </section>
