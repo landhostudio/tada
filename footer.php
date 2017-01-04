@@ -8,9 +8,21 @@
           </div>
         <?php endif; ?>
         
-        <?php the_field('options_footer_body', option); ?>
-        
-        <p class="footer__copy">&copy; <?php $currentYear = date('Y'); if ($currentYear == $currentYear): ?><?php echo date('Y'); ?><?php else: ?>2016 – <?php echo date('Y'); ?><?php endif; ?> <?php bloginfo('name'); ?>.<?php if (get_field('options_footer_copyright', option)): ?> <?php the_field('options_footer_copyright', option); ?><?php endif; ?></p>
+        <?php if (get_field('options_footer_column_1', option) && get_field('options_footer_column_1', option)): ?>
+          <div class="footer__columns">
+            <div class="footer__column">
+              <?php the_field('options_footer_column_1', option); ?>
+            </div>
+
+            <div class="footer__column">
+              <?php the_field('options_footer_column_2', option); ?>
+            </div>
+          </div>
+        <?php endif; ?>
+
+        <div class="footer__copy">
+          <p>&copy; <?php $currentYear = date('Y'); if ($currentYear == $currentYear): ?><?php echo date('Y'); ?><?php else: ?>2016 – <?php echo date('Y'); ?><?php endif; ?> <?php bloginfo('name'); ?>.<?php if (get_field('options_footer_copyright', option)): ?> <?php the_field('options_footer_copyright', option); ?><?php endif; ?></p>
+        </div>
       </div>
     </footer>
 

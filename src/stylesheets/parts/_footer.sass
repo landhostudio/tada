@@ -1,7 +1,7 @@
 .footer
   position: relative
   font-size: em-calc(18)
-  padding-top: em-calc(64)
+  padding-top: em-calc(80)
   padding-bottom: em-calc(24)
   color: $color-3
   background-color: $color-6
@@ -25,5 +25,23 @@
       width: em-calc(96)
       height: em-calc(96)
 
+  &__columns
+    @include media($screen-sm-min)
+      display: flex
+      flex-wrap: wrap
+
+  &__column
+    @include media($screen-sm-min)
+      width: 50%
+
+      &:first-of-type
+        padding-right: 6.25%
+      &:last-of-type
+        padding-left: 6.25%
+
+    + .footer__column
+      @include media(max-width $screen-sm-max)
+        margin-top: em-calc(32)
+
   &__copy
-    margin-top: em-calc(48)
+    margin-top: em-calc(64)
