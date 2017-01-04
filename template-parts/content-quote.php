@@ -5,7 +5,7 @@
 ?>
 
 <?php if (get_sub_field('landing_sections_quote_title')): ?>
-  <section class="quote"<?php if (get_sub_field('landing_sections_quote_text_color') || get_sub_field('landing_sections_quote_background_color') || get_sub_field('landing_sections_quote_background_image')): ?> style="<?php if (get_sub_field('landing_sections_quote_text_color')): ?> color: <?php the_sub_field('landing_sections_quote_text_color'); ?>;<?php endif; ?><?php if (get_sub_field('landing_sections_quote_background_color')): ?> background-color: <?php the_sub_field('landing_sections_quote_background_color'); ?>;<?php endif; ?><?php if (get_sub_field('landing_sections_quote_background_image')): ?> background-image: url('<?php echo $thumbLarge; ?>');<?php endif; ?>"<?php endif; ?>>
+  <section class="quote"<?php if (get_sub_field('landing_sections_quote_text_color') || get_sub_field('landing_sections_quote_background_color')): ?> style="<?php if (get_sub_field('landing_sections_quote_text_color')): ?> color: <?php the_sub_field('landing_sections_quote_text_color'); ?>;<?php endif; ?><?php if (get_sub_field('landing_sections_quote_background_color')): ?> background-color: <?php the_sub_field('landing_sections_quote_background_color'); ?>;<?php endif; ?>"<?php endif; ?>>
     <div class="quote__container">
       <h2><?php the_sub_field('landing_sections_quote_title'); ?></h2>
     </div>
@@ -16,5 +16,14 @@
         <img src="<?php the_sub_field('landing_sections_quote_author_image'); ?>" alt="">
       </div>
     <?php endif; ?>
+
+    <?php if ($image): ?>
+      <div class="quote__background">
+        <div class="quote__image rellax" data-rellax-speed="1.5" data-rellax-percentage="1">
+          <?php echo wp_get_attachment_image( $image, 'large', false, array() ); ?>
+        </div>
+      </div>
+    <?php endif; ?>
+
   </section>
 <?php endif; ?>

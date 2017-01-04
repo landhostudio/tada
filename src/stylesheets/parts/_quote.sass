@@ -1,4 +1,5 @@
 .quote
+  position: relative
   padding-top: em-calc(48)
   padding-bottom: em-calc(48)
   background-color: $color-3
@@ -7,6 +8,7 @@
   background-size: cover
   color: $color-1
   text-align: center
+  overflow: hidden
 
   @include media($screen-sm-min)
     padding-top: em-calc(96)
@@ -14,8 +16,30 @@
 
   &__container
     @extend .container
+    position: relative
+    z-index: 2
+    
+    h2
+      font-weight: $font-weight-1
 
   &__author
     img
       width: em-calc(80)
       margin-top: em-calc(32)
+
+  
+  &__background
+    @extend .absolute
+    z-index: 1
+
+  &__image
+
+    img
+      position: absolute
+      top: 50%
+      width: 100%
+      max-width: $screen-lg-max
+      margin-left: auto
+      margin-right: auto
+      transform: translate(-50%,-50%)
+      
