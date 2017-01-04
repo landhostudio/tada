@@ -59,7 +59,26 @@ acf_add_local_field_group(array (
 							'required' => 0,
 							'conditional_logic' => 0,
 							'wrapper' => array (
-								'width' => '20',
+								'width' => '50',
+								'class' => '',
+								'id' => '',
+							),
+						),
+						array (
+							'default_value' => 0,
+							'message' => 'Bold',
+							'ui' => 0,
+							'ui_on_text' => '',
+							'ui_off_text' => '',
+							'key' => 'field_586d20c941fb9',
+							'label' => 'Text Weight',
+							'name' => 'landing_sections_quote_text_weight',
+							'type' => 'true_false',
+							'instructions' => '',
+							'required' => 0,
+							'conditional_logic' => 0,
+							'wrapper' => array (
+								'width' => '50',
 								'class' => '',
 								'id' => '',
 							),
@@ -78,7 +97,7 @@ acf_add_local_field_group(array (
 							'required' => 0,
 							'conditional_logic' => 0,
 							'wrapper' => array (
-								'width' => '20',
+								'width' => '50',
 								'class' => '',
 								'id' => '',
 							),
@@ -97,7 +116,7 @@ acf_add_local_field_group(array (
 							'required' => 0,
 							'conditional_logic' => 0,
 							'wrapper' => array (
-								'width' => '20',
+								'width' => '50',
 								'class' => '',
 								'id' => '',
 							),
@@ -112,7 +131,7 @@ acf_add_local_field_group(array (
 							'required' => 0,
 							'conditional_logic' => 0,
 							'wrapper' => array (
-								'width' => '20',
+								'width' => '50',
 								'class' => '',
 								'id' => '',
 							),
@@ -136,7 +155,7 @@ acf_add_local_field_group(array (
 							'required' => 0,
 							'conditional_logic' => 0,
 							'wrapper' => array (
-								'width' => '20',
+								'width' => '50',
 								'class' => '',
 								'id' => '',
 							),
