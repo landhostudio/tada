@@ -30,12 +30,16 @@
 
   &__scene
     @extend .absolute
+    text-align: center
 
     @include media(max-width $screen-sm-max)
       transform: scale(2)
 
     img
       width: 100%
+      max-width: $screen-lg-max
+      margin-left: auto
+      margin-right: auto
 
   // PETALS
   &__petals
