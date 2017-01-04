@@ -27,21 +27,23 @@
                 <?php the_sub_field('landing_sections_carousel_slide_body'); ?>
 
                 <?php if (have_rows('landing_sections_carousel_slide_features')): ?>
-                  <?php while (have_rows('landing_sections_carousel_slide_features')): the_row(); ?>
-                    <div class="carousel__feature">
-                      <?php if (get_sub_field('landing_sections_carousel_slide_feature_icon')): ?>
-                        <div class="carousel__icon">
-                          <img src="<?php the_sub_field('landing_sections_carousel_slide_feature_icon'); ?>" alt="">
-                        </div>
-                      <?php endif; ?>
-                      
-                      <?php if (get_sub_field('landing_sections_carousel_slide_feature_body')): ?>
-                        <div class="carousel__text">
-                          <?php the_sub_field('landing_sections_carousel_slide_feature_body'); ?>
-                        </div>
-                      <?php endif; ?>
-                    </div>
-                  <?php endwhile; ?>
+                  <div class="carousel__features">
+                    <?php while (have_rows('landing_sections_carousel_slide_features')): the_row(); ?>
+                      <div class="carousel__feature">
+                        <?php if (get_sub_field('landing_sections_carousel_slide_feature_icon')): ?>
+                          <div class="carousel__icon">
+                            <img src="<?php the_sub_field('landing_sections_carousel_slide_feature_icon'); ?>" alt="">
+                          </div>
+                        <?php endif; ?>
+                        
+                        <?php if (get_sub_field('landing_sections_carousel_slide_feature_body')): ?>
+                          <div class="carousel__text">
+                            <?php the_sub_field('landing_sections_carousel_slide_feature_body'); ?>
+                          </div>
+                        <?php endif; ?>
+                      </div>
+                    <?php endwhile; ?>
+                  </div>
                 <?php endif; ?>
               </div>
             </div>
