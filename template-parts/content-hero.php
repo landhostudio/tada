@@ -4,6 +4,11 @@
       <div class="hero__container">
         <div class="hero__title">
           <h2><?php the_field('landing_hero_title'); ?></h2>
+          <?php if (get_field('landing_hero_wordmark')): ?>
+            <div class="hero__wordmark">
+              <img src="<?php the_field('landing_hero_wordmark'); ?>" alt="">
+            </div>
+          <?php endif; ?>
         </div>
       </div>
     <?php endif; ?>
