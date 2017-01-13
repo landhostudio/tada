@@ -15,7 +15,7 @@
 
     <div class="hero__readmore">
       <button type="button" class="button button--more">
-        <span><?php esc_html_e('Learn More', 'tada'); ?></span>
+        <span><?php the_field('landing_hero_arrow'); ?></span>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 18" width="8" height="18">
           <g>
             <path d="M4,17.18l-.39.35L4,18l.39-.46ZM3.48,0V17.18h1V0Zm.9,16.83L.78,12.53,0,13.24l3.61,4.3Zm0,.71L8,13.24l-.78-.71-3.61,4.3Z"></path>
