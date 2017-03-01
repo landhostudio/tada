@@ -119,3 +119,8 @@
             // TODO
   &__cta
     order: 3
+
+    .button
+      @include media(max-width #{em-calc(360)})
+        transform: scale(0.9)
+        transform-origin: right center
