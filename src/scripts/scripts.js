@@ -1,10 +1,4 @@
-//=include ../../bower_components/jquery/dist/jquery.js
-//=include rellax.js
-//=include ../../bower_components/ajaxchimp/jquery.ajaxchimp.js
-//=include ../../bower_components/fastclick/lib/fastclick.js
-//=include ../../bower_components/viewport-units-buggyfill/viewport-units-buggyfill.js
-
-$(function() {
+(function($) {
 
   'use strict';
 
@@ -74,4 +68,4 @@ $(function() {
 
   init();
 
-});
+})(jQuery);
