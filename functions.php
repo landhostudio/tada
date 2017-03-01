@@ -22,7 +22,7 @@
 			
       function init_assets() {
 
-        wp_enqueue_style('all-css', get_template_directory_uri() . '/dist/css/all.css', true, '1.4', false);
+        wp_enqueue_style('all-css', get_template_directory_uri() . '/dist/css/all.css', true, '1.5', false);
 
         wp_register_script('all-js', get_template_directory_uri() . '/dist/js/all.js', array(), '1.4', true);
         wp_enqueue_script('all-js');
